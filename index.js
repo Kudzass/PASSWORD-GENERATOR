@@ -7,3 +7,8 @@ function getRandomCharacter(set) {
   return set[Math.floor(Math.random() * set.length)];
 }
 document.getElementById("generate").addEventListener("click", function () {
+
+    const length = parseInt(document.getElementById("length").value);
+  const includeUpper = document.getElementById("uppercase").checked;
+  const includeNumbers = document.getElementById("numbers").checked;
+  const includeSymbols = document.getElementById("symbols").checked;
