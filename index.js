@@ -27,3 +27,5 @@ document.getElementById("generate").addEventListener("click", function () {
   }
   document.getElementById("password").value = password;
 });
+
+document.getElementById("copy").addEventListener("click", function () {});
