@@ -6,3 +6,4 @@ const symbols = "!@#$%^&*()_+[]{}|;:,.<>?";
 function getRandomCharacter(set) {
   return set[Math.floor(Math.random() * set.length)];
 }
+document.getElementById("generate").addEventListener("click", function () {
