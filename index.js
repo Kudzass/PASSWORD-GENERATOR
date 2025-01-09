@@ -21,3 +21,8 @@ document.getElementById("generate").addEventListener("click", function () {
     document.getElementById("password").value = "Select at least one option!";
     return;
   }
+  
+  let password = "";
+  for (let i = 0; i < length; i++) {
+    password += getRandomCharacter(charSet);
+  }
