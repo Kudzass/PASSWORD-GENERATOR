@@ -28,4 +28,9 @@ document.getElementById("generate").addEventListener("click", function () {
   document.getElementById("password").value = password;
 });
 
-document.getElementById("copy").addEventListener("click", function () {});
+document.getElementById("copy").addEventListener("click", function () {
+  const passwordField = document.getElementById("password");
+  passwordField.select();
+  document.execCommand("copy");
+  alert("Password copied to clipboard!");
+});
