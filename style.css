@@ -42,3 +42,16 @@ input[type="text"] {
 input[type="text"]::placeholder {
   color: #bbb;
 }
+.btn {
+  margin-top: 15px;
+  padding: 15px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.btn:hover {
+  background-color: #0056b3;
+}
