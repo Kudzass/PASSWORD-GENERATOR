@@ -8,3 +8,11 @@ body {
   align-items: center;
   min-height: 100vh;
 }
+.wrapper {
+  text-align: center;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  width: 600px;
+}
