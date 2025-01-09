@@ -12,3 +12,8 @@ document.getElementById("generate").addEventListener("click", function () {
   const includeUpper = document.getElementById("uppercase").checked;
   const includeNumbers = document.getElementById("numbers").checked;
   const includeSymbols = document.getElementById("symbols").checked;
+
+  let charSet = lower;
+  if (includeUpper) charSet += upper;
+  if (includeNumbers) charSet += numbers;
+  if (includeSymbols) charSet += symbols;
