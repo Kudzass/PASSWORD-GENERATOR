@@ -17,3 +17,7 @@ document.getElementById("generate").addEventListener("click", function () {
   if (includeUpper) charSet += upper;
   if (includeNumbers) charSet += numbers;
   if (includeSymbols) charSet += symbols;
+  if (charSet === "") {
+    document.getElementById("password").value = "Select at least one option!";
+    return;
+  }
