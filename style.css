@@ -25,3 +25,20 @@ h1 {
   flex-direction: column;
   align-items: stretch;
 }
+label {
+  margin-bottom: 15px;
+  text-align: left;
+  font-size: 18px;
+}
+input[type="number"],
+input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 12px 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+input[type="text"]::placeholder {
+  color: #bbb;
+}
