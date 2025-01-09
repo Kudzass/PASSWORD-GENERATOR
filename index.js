@@ -7,8 +7,7 @@ function getRandomCharacter(set) {
   return set[Math.floor(Math.random() * set.length)];
 }
 document.getElementById("generate").addEventListener("click", function () {
-
-    const length = parseInt(document.getElementById("length").value);
+  const length = parseInt(document.getElementById("length").value);
   const includeUpper = document.getElementById("uppercase").checked;
   const includeNumbers = document.getElementById("numbers").checked;
   const includeSymbols = document.getElementById("symbols").checked;
@@ -21,8 +20,10 @@ document.getElementById("generate").addEventListener("click", function () {
     document.getElementById("password").value = "Select at least one option!";
     return;
   }
-  
+
   let password = "";
   for (let i = 0; i < length; i++) {
     password += getRandomCharacter(charSet);
   }
+  document.getElementById("password").value = password;
+});
